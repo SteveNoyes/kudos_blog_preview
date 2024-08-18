@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Figtree Extra Bold';
+  src: url('../../Figtree-ExtraBold.woff2') format('woff2'),
+      url('../../Figtree-ExtraBold.woff') format('woff'),
+      url('../../Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree Semi Bold';
+  src: url('../../Figtree-SemiBold.woff2') format('woff2'),
+      url('../../Figtree-SemiBold.woff') format('woff'),
+      url('../../Figtree-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Figtree Extra Bold';
+}
