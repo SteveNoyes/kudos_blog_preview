@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Figtree Extra Bold';
-  src: url('../../Figtree-ExtraBold.woff2') format('woff2'),
-      url('../../Figtree-ExtraBold.woff') format('woff'),
-      url('../../Figtree-ExtraBold.ttf') format('truetype');
+  src: url('../fonts/static/Figtree-ExtraBold.woff2') format('woff2'),
+      url('../fonts/static/Figtree-ExtraBold.woff') format('woff'),
+      url('../fonts/static/Figtree-ExtraBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -10,14 +10,105 @@
 
 @font-face {
   font-family: 'Figtree Semi Bold';
-  src: url('../../Figtree-SemiBold.woff2') format('woff2'),
-      url('../../Figtree-SemiBold.woff') format('woff'),
-      url('../../Figtree-SemiBold.ttf') format('truetype');
+  src: url('../fonts/static/Figtree-SemiBold.woff2') format('woff2'),
+      url('../fonts/static/Figtree-SemiBold.woff') format('woff'),
+      url('../fonts/static/Figtree-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
+/*
+Font
+
+Family: Figtree
+Size: 16px
+Weights: 500, 800 
+*/
+
 body {
+  font-family: 'Figtree Extra Bold';
+  background-color: var(--yellow);
+  font-size: 16px;
+}
+
+/*
+  Mobile: 375px
+  Desktop: 1440px 
+
+  Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+*/
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --black: hsl(0, 0%, 0%);
+}
+
+.inner-content {
+  box-shadow: 8px 10px 1px;
+  background-color: var(--white);
+  width: 335px;
+  margin: 0 auto;
+  margin-top: 50%;
+  outline: 1px solid var(--black);
+  border-radius: 18px;
+}
+
+.inner-content img {
+  width: 290px;
+  padding: 22px 0 22px 22px;
+  border-radius: 14px;
+}
+
+.card-info {
+  padding: 0 25px;
+}
+
+button {
+  display: block;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 4px;
+  color: var(--black);
+  padding: 4px 8px;
+  font-family: 'Figtree Extra Bold';
+  margin-bottom: 15px;
+}
+
+.card-info p {
+  font-family: 'Figtree Semi Bold';
+}
+
+.card-date {
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+
+.card-info h1 {
+  font-size: 20px;
+}
+
+.card-about {
+  font-size: 15px;
+  color: var(--gray-500);
+  line-height: 1.4;
+  padding-top: 20px;
+}
+
+.author-section {
+  display: flex;
+  margin-left: -25px;
+}
+
+.author-section img {
+  width: 35px;
+}
+
+.author-section p {
+  padding-top: 30px;
+  padding-left: 10px;
   font-family: 'Figtree Extra Bold';
 }
