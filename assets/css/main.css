@@ -91,6 +91,11 @@ button {
   font-size: 20px;
 }
 
+.card-info h1:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
 .card-about {
   font-size: 15px;
   color: var(--gray-500);
