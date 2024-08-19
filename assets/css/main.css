@@ -52,7 +52,7 @@ body {
   background-color: var(--white);
   width: 335px;
   margin: 0 auto;
-  margin-top: 50%;
+  margin-top: 10%;
   outline: 1px solid var(--black);
   border-radius: 18px;
 }
